@@ -82,6 +82,7 @@
 .page-menu{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     &-insert{
         margin: 0 15px 15px 0;
         background: white;
