@@ -1,0 +1,242 @@
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: $gray-medium;
+    opacity: 1;
+    i {
+        padding-right: 17px;
+    }
+    input {
+        font-weight: 700;
+        font-size: 16px;
+        width: 135px;
+        opacity: 1;
+        color: $black;
+        border: none;
+        background-color: $gray-medium;
+        &::placeholder {
+            opacity: 1;
+        }
+    }
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 39.5px 0 57px 0;
+    @include desktop {
+        padding: 30px 0 30px 0;
+    }
+    h1 {
+        margin: 0;
+        padding-bottom: 12px;
+        @include desktop {
+            font-size: 40px;
+            padding-bottom: 18px;
+        }
+    }
+    p {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 300;
+        padding-bottom: 27px;
+    }
+}
+
+.functionning {
+    padding: 48px 0 68px 20px;
+    margin: 0;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    @include desktop {
+        padding: 45px 0 34px 20px;
+    }
+    &__block {
+        @include desktop {
+            margin: auto;
+            width: 100%;
+            max-width: 1090px;
+        }
+    }
+    h1 {
+        margin-top: 0;
+    }
+}
+
+.functionning-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 24.92px;
+    padding: 0 20px 0 12.51px;
+    @include desktop {
+        flex-direction: row;
+        gap: 36.51px;
+        justify-content: center;
+    }
+    li {
+        display: flex;
+        align-items: center;
+        background-color: $gray-light;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+        height: 72.38px;
+        counter-increment: my-counter 1;
+        @include desktop {
+            width: 344.5px;
+        }
+        i {
+            color: $gray;
+            padding: 0 27px 0 9px;
+
+        }
+        &:hover {
+            i {
+                color: $color-primary;
+            }
+        }
+        &:before {
+            content: counter(my-counter);
+            background-color: $color-primary;
+            color: $white;
+            font-size: 14.18px;
+            font-weight: 500;
+            width: 24px;
+            height: 24px;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            right: 12px;
+        }
+        span {
+            font-weight: 500;
+        }
+    }
+}
+
+.restaurants {
+    padding: 54px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    &__block {
+        @include desktop {
+        margin: auto;
+        width: 100%;
+        max-width: 1090px;
+        }
+    }
+    h1 {
+        margin-top: 0;
+    }
+    a {
+        text-decoration: none;
+        color:  $black;
+    }
+    &__card {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        padding: 0 18px 0 0;
+        @include desktop {
+            flex-direction: row;
+            flex-wrap: wrap;
+            row-gap: 50px;
+            justify-content: space-between;
+        }
+    }
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 174px;
+    }
+}
+.card {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    margin-bottom: 18px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    @include desktop {
+        width: 480px;
+    }
+}
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        height: 77px;
+        padding-left: 13px;
+        h2 {
+            font-size: 18px;
+            margin: 0;
+        }
+        p{
+            font-size: 17px;
+            font-weight: 300;
+            margin: 0;
+        }
+    }
+}
+.badge-new {
+    color: $color-tertiary-dark;
+    background-color: $color-tertiary;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 7px 9px;
+    border-radius: 2px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+.loader {
+    width: 100%;
+    height: 100%;
+    background-color: $color-tertiary;
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: loader-fade 500ms ease 4s forwards;
+    &__dots {
+        width: 16px;
+        height: 16px;
+        margin-bottom: 30px;
+        border-radius: 50%;
+        background: $color-primary;
+        color: $color-secondary;
+        box-shadow: -24px 0, 24px 0;
+        animation: loader-spin 2s linear infinite;
+    }
+    &__text {
+       position: relative;
+       font-family: 'shrikhand';
+       font-size: 50px;
+       color: $color-tertiary;
+       &:after {
+            content: 'ohmyfood';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: $black;
+            overflow: hidden;
+            animation: text-fill 4s ease-in-out infinite;
+       }
+    }
+}

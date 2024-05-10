@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    height: 63px;
+    position: relative;
+    z-index: 1;
+    a {
+        position: absolute;
+        left: 20px;
+    }
+    .return-arrow {
+        font-size: 25px;
+        text-decoration: none;
+        color: black;
+    }
+    @include desktop {
+        height: 96px;
+    }
+    &__logo {
+        height: 30px;
+        padding: 21px 0 12px 0;
+        @include desktop {
+            height: 38px;
+            padding: 28px 0 25px 0;
+        }
+    }
+}
