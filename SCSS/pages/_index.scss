@@ -46,7 +46,6 @@
         padding-bottom: 27px;
     }
 }
-
 .functionning {
     padding: 48px 0 68px 20px;
     margin: 0;
@@ -67,6 +66,7 @@
         margin-top: 0;
     }
 }
+
 
 .functionning-list {
     list-style-type: none;
@@ -120,6 +120,7 @@
         }
     }
 }
+
 
 .restaurants {
     padding: 54px 0 0 20px;
@@ -230,13 +231,13 @@
        font-size: 50px;
        color: $color-tertiary;
        &:after {
-            content: 'ohmyfood';
-            position: absolute;
-            left: 0;
-            top: 0;
-            color: $black;
-            overflow: hidden;
-            animation: text-fill 4s ease-in-out infinite;
-       }
-    }
+        content: 'ohmyfood';
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: $black;
+        overflow: hidden;
+        animation: text-fill 4s ease-in-out infinite;
+   }
+}
 }

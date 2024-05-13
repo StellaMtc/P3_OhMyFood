@@ -1,51 +1,29 @@
-.footer {
+.header {
     display: flex;
-    flex-direction: column;
-    padding: 22px 25px;
-    gap: 16px;
-    color: $white;
-    background-color: $black;
-    @include desktop {
-        flex-direction: row-reverse;
-        align-items: flex-end;
-        padding: 30px 25px;
-        height: 70px;
-    }
-    h2 {
-        margin: 0;
-        font-family: 'shrikhand';
-        font-weight: 400;
-        font-size: 18px;
-        @include desktop {
-            padding-right: 40px;
-        }
-    }
-    &__list {
-        display: flex;
-        flex-direction: column;
-        gap: 7px;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        &__link2 {
-            @include desktop {
-                padding-right: 30px;
-            }
-        }
-        @include desktop {
-            flex-direction: row;
-            gap: 14px;
-            padding-right: 60px;
-        }
-    }
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    height: 63px;
+    position: relative;
+    z-index: 1;
     a {
-        font-family: 'roboto';
-        font-weight: 500;
-        text-decoration: none;
-        color: $white;
+        position: absolute;
+        left: 20px;
     }
-    i {
-        width: 12px;
-        padding-right: 10.8px;
+    .return-arrow {
+        font-size: 25px;
+        text-decoration: none;
+        color: black;
+    }
+    @include desktop {
+        height: 96px;
+    }
+    &__logo {
+        height: 30px;
+        padding: 21px 0 12px 0;
+        @include desktop {
+            height: 38px;
+            padding: 28px 0 25px 0;
+        }
     }
 }

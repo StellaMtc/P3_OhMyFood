@@ -167,7 +167,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
-  bottom: 25px;
+  bottom: 25.6px;
   transform-origin: center;
   transform: scale(0);
 }
@@ -422,9 +422,9 @@ body {
 .loader {
   width: 100%;
   height: 100%;
-  background-color: #99E2D0;
   position: fixed;
-  z-index: 3;
+  background-color: #EAEAEA;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -447,7 +447,7 @@ body {
   position: relative;
   font-family: "shrikhand";
   font-size: 50px;
-  color: #99E2D0;
+  color: #9356DC;
 }
 
 .loader__text:after {
@@ -478,15 +478,15 @@ body {
   }
 }
 
-.footer h2 {
+.footer__logo {
   margin: 0;
   font-family: "shrikhand";
-  font-weight: 400;
-  font-size: 18px;
+  width: 100px;
+  filter: invert(100%);
 }
 
 @media screen and (min-width: 1024px) {
-  .footer h2 {
+  .footer__logo {
     padding-right: 40px;
   }
 }
