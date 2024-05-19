@@ -424,12 +424,12 @@ body {
   height: 100%;
   position: fixed;
   background-color: #EAEAEA;
-  z-index: 1;
+  z-index: 3;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: loader-fade 500ms ease 4s forwards;
+  animation: loader-fade 500ms ease 3s forwards;
 }
 
 .loader__dots {
@@ -457,7 +457,7 @@ body {
   top: 0;
   color: #353535;
   overflow: hidden;
-  animation: text-fill 4s ease-in-out infinite;
+  animation: text-fill 3s ease-in-out infinite;
 }
 
 .footer {
