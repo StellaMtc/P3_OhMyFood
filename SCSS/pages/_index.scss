@@ -214,7 +214,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    animation: loader-fade 500ms ease 4s forwards;
+    animation: loader-fade 500ms ease 3s forwards;
     &__dots {
         width: 16px;
         height: 16px;
@@ -237,7 +237,7 @@
         top: 0;
         color: $black;
         overflow: hidden;
-        animation: text-fill 4s ease-in-out infinite;
+        animation: text-fill 3s ease-in-out infinite;
    }
 }
 }
